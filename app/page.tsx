@@ -31,14 +31,16 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-grey-900 text-white flex flex-col items-center p-10">
-      <h1 className="text-4xl font-bold mb-6 text-center text-cyan-400">User Management System</h1>
+      <h1 className="text-4xl font-bold mb-6 text-center text-cyan-400">
+        User Management System
+      </h1>
 
       <UserForm addUser={addUser} />
 
       <input
         type="text"
         placeholder="Search by name or email"
-        className="border border-grey-600 bg-grey-800 text-white p-3 rounded-lg  mt-4 mb-4 w-full focus:outline-none focus:border-cyan-4000"
+        className="border-2 border-gray-400 p-2 w-full rounded bg-white text-black dark:bg-gray-800 dark:text-white"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />

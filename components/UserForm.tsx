@@ -34,7 +34,7 @@ export default function UserForm({addUser}:any) {
         <input
           type="text"
           placeholder="Full Name"
-          className="border p-2"
+          className="border p-2 w-full rounded text-black dark:text-white bg-white dark:bg-gray-800"
           value={name}
           onChange={(e)=>setName(e.target.value)}
           required

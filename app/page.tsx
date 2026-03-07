@@ -44,7 +44,7 @@ export default function Home() {
       />
 
       <table className="mt-6 w-full border border-grey-700 rounded-lg overflow-hidden">
-        <thead>
+        <thead className="bg-gradient-to-r from  cyan-500 to-blue-500 text-white">
           <tr className="bg-cyan-600 text-white">
             <th className="border p-2 cursor-pointer" onClick={sortUsers}>
               Name
@@ -57,7 +57,7 @@ export default function Home() {
           </tr>
         </thead>
 
-        <tbody>
+        <tbody className="bg-white dark:bg-gray-800 text-black dark:text-white">
           {users
             .filter(
               (user) =>
